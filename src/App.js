@@ -1,10 +1,11 @@
+import "./App.module.css";
+import ProfileList from "./Components/profile/ProfileList";
 
-import './App.module.css';
 
 function App() {
   return (
     <div className="App">
-      hello world
+      <ProfileList />
     </div>
   );
 }
