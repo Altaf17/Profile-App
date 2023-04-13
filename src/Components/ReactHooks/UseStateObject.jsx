@@ -10,8 +10,8 @@ const UseStateObject = () => {
     const editCompany = () => {
         setProfile({ ...profile, company: "microsoft" });
     }
-    const PreviosCompany = ()=>{
-        setProfile({...profile,company:"Google"})
+    const PreviosJob = ()=>{
+        setProfile({...profile,job:"Data Scientist"})
     }
     return (
         <>
@@ -23,7 +23,7 @@ const UseStateObject = () => {
             </div>
             <div className="--center-all --my2">
                 <button className="--btn --btn-primary" onClick={editCompany}>Change Company</button> &nbsp;
-                <button className="--btn --btn-primary" onClick={PreviosCompany}>Previos Company</button>
+                <button className="--btn --btn-primary" onClick={PreviosJob}>Change Job</button>
             </div>
         </>
     )
