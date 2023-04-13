@@ -8,9 +8,9 @@ const GetUserData = () => {
 
 
     // Delete function
-    const RemovePerson = (id)=>{
-        const newPerson = person.filter((prsn)=> prsn.id !== id)
-        setPerson(newPerson) 
+    const RemovePerson = (id) => {
+        const newPerson = person.filter((prsn) => prsn.id !== id)
+        setPerson(newPerson)
     }
     return (
         <section className='--flex-center --100vh --bg-primary'>
@@ -24,12 +24,12 @@ const GetUserData = () => {
                     return (
                         <div className='--flex-between --bg-light --my --card' key={id}>
                             <h2><BsFillPersonFill /> {name}</h2> <span>-</span><h4><BiMap />{city}</h4>
-                            <BiTrash color='red' size={22} onClick={()=>RemovePerson(id)} />
+                            <BiTrash color='red' size={22} onClick={() => RemovePerson(id)} />
                         </div>
                     )
                 })}
 
-            <button className="--btn --btn-danger" onClick={()=> setPerson([])}>Clear All</button>
+                <button className="--btn --btn-danger" onClick={() => setPerson([])}>Clear All</button>
             </div>
         </section>
     )
