@@ -16,7 +16,7 @@ const UseStateObject = () => {
     return (
         <>
             <h2 className='--text-center --my2'>UseState in Object</h2>
-            <div className="--card max2">
+            <div className="--card --mx2">
                 <h2>Name : {profile.name}</h2>
                 <h4>Job : {profile.job}</h4>
                 <h4>Company : {profile.company}</h4>
