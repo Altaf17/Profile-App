@@ -5,6 +5,7 @@ import UseStateObject from './UseStateObject'
 import Conditional from './Conditional'
 
 import TaskList from './TaskList'
+import CounterUseReducer from '../useReducer/CounterUseReducer'
 
 const Main = () => {
   return (
@@ -13,7 +14,8 @@ const Main = () => {
         {/* <GetUserData/> */}
         {/* <UseStateObject/> */}
         {/* <Conditional/> */}
-        <TaskList/>
+        {/* <TaskList/> */}
+        <CounterUseReducer/>
     </div>
   )
 }
